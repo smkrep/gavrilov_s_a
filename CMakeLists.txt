@@ -2,6 +2,6 @@ cmake_minimum_required(VERSION 3.11)
 
 project(gavrilov_s_a)
 
-include_directories(PriorityQueue)
+include_directories(prj.lab)
 
-add_subdirectory(PriorityQueue)
+add_subdirectory(prj.lab)
