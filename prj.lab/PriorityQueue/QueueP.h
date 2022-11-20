@@ -4,17 +4,16 @@
 
 #include <iostream>
 #include <memory>
-#include<vector>
+#include <vector>
 
 
 class QueueP
 {
 public:
 	QueueP()=default;
-	QueueP(const std::vector<int> values);
+	QueueP(const std::vector<int>& values);
 	~QueueP();
 	QueueP(const QueueP& copy);
-	QueueP& operator=(const QueueP& rhs);
 
 	void push(const int& value);
 	int pop(); 

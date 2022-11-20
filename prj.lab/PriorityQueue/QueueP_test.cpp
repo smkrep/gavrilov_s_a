@@ -15,7 +15,7 @@ int main()
 	test.push(1);
 	test.push(2);
 	test.push(3);
-	test.print(); //lol test meme haha
+	test.print(); 
 
 
 

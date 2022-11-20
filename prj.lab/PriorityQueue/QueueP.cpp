@@ -53,7 +53,7 @@ void QueueP::push(const int& val)
 }
 	
 
-int QueueP::pop()
+int QueueP::pop() 
 {
 	int value = head->data;
 	head = std::move(head->next);
@@ -65,7 +65,7 @@ int QueueP::top() const
 	return head->data;
 }
 
-QueueP::QueueP(const std::vector<int> values)
+QueueP::QueueP(const std::vector<int>& values)
 {
 	for (int i = 0; i < values.size(); i++)
 	{
@@ -92,4 +92,6 @@ void QueueP::print() const
 	}
 	std::cout << "\n";
 }
+
+
 

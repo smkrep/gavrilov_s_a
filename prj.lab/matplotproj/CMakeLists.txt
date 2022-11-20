@@ -1,0 +1,4 @@
+add_library(matplotproj matplotproj.h matplotproj.cpp)
+
+add_executable(matplotproj_test matplotproj_test.cpp)
+target_link_libraries(matplotproj_test matplotproj)
