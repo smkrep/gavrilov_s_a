@@ -73,6 +73,27 @@ QueueP::QueueP(const std::vector<int>& values)
 	}
 }
 
+QueueP& QueueP::operator=(const QueueP& rhs)
+{
+	Node* temp = rhs.head.get();
+	if (temp != nullptr) {
+
+		head = std::make_unique<Node>(temp->data);
+		temp = temp->next.get();
+	}
+	
+	Node* thisptr = head.get();
+
+	while (temp != nullptr) {
+
+		thisptr->next = std::make_unique<Node>(temp->data);
+		thisptr = thisptr->next.get();
+		temp = temp->next.get();
+	}
+	return *this;
+	
+}
+
 QueueP::~QueueP()
 {
 	while (head != nullptr)

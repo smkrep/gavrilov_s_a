@@ -10,10 +10,11 @@
 class QueueP
 {
 public:
-	QueueP()=default;
+	QueueP() = default;
 	QueueP(const std::vector<int>& values);
 	~QueueP();
 	QueueP(const QueueP& copy);
+	QueueP& operator=(const QueueP& rhs);
 
 	void push(const int& value);
 	int pop(); 
