@@ -118,22 +118,16 @@ int main() {
     matplot::plot(x, tn_calc1, x, tn_calc2, "--");
     matplot::xlabel("n");
     matplot::ylabel("t_{calculations}/n");
-    //matplot::save("img/tcn(n).svg");
-    //matplot::save("img/tcn(n).gif");
     matplot::save("img/tcn(n).png");
 
     matplot::plot(x, t_calc1, x, t_calc2, "--");
     matplot::xlabel("n");
     matplot::ylabel("t_{calculations}");
-    //matplot::save("img/tc(n).svg");
-    //matplot::save("img/tc(n).gif");
     matplot::save("img/tc(n).png");
 
     matplot::plot(x, t_read1, x, t_read2, "--");
     matplot::xlabel("n");
     matplot::ylabel("t_{reading}");
-    //matplot::save("img/tr(n).svg");
-    //matplot::save("img/tr(n).gif");
     matplot::save("img/tr(n).png");
 
 }
