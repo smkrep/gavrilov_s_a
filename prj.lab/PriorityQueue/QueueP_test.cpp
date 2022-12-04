@@ -31,5 +31,9 @@ int main()
 	QueueP test1(vec);
 	std::cout << "RESULT:\n";
 	test1.print();
+	std::cout << "CONSTRUCTING WITH OPERATOR=\n";
+	QueueP test2(test1);
+	std::cout << "RESULT:\n";
+	test2.print();
 
 }

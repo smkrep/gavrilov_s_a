@@ -73,6 +73,11 @@ QueueP::QueueP(const std::vector<int>& values)
 	}
 }
 
+QueueP::QueueP(const QueueP& copy)
+{
+	 *this = copy;
+}
+
 QueueP& QueueP::operator=(const QueueP& rhs)
 {
 	Node* temp = rhs.head.get();
